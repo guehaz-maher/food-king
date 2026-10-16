@@ -19,28 +19,6 @@ A high-performance, modular full-stack web application for digital restaurant or
 
 ---
 
-## 📐 System Architecture & Data Schema
-
-The platform relies on a normalized relational database design tailored for e-commerce and food delivery services:
-+------------------+         +--------------------+         +-------------------+
-|  accounts.User   | <------> |    orders.Order    | <-----> |  orders.OrderItem |
-+------------------+         +--------------------+         +-------------------+
-| - role           |         | - status           |         | - menu_item       |
-| - phone_number   |         | - total_price      |         | - quantity        |
-| - address        |         | - created_at       |         | - price           |
-+------------------+         +--------------------+         +-------------------+
-|
-v
-+-------------------+
-|   menu.MenuItem   |
-+-------------------+
-| - category (FK)   |
-| - price           |
-| - is_available    |
-+-------------------+
-
----
-
 ## 🚀 Tech Stack
 
 ### **Backend**
